@@ -1,0 +1,35 @@
+.field {
+  display: flex;
+  border-bottom: 2px solid #424242;
+  padding: 6px;
+
+  > svg {
+    fill: #424242;
+    transition: fill .4s ease;
+  }
+
+  &:focus-within{
+    >svg {
+      fill: white;
+    }
+    >div> input {
+      fill: white;
+    }
+  }
+
+
+  > div {
+    margin-left: 10px;
+    > input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: #424242;
+      transition: fill .4s ease;
+
+
+    }
+
+  }
+
+}
